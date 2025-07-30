@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login- TechFixNow</title>
+  <link rel = "stylesheet" href = "css/style.css">
+  <!-- Adding Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <style>
+    /* Shared styling for both pages */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(135deg, #853bd5, #1deaed);
+      color: #2483b2;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>TechFixNow</h1>
+    <h2 style="color: #115e9a;">Welcome Back!</h2>
+    <h3>Log in to your account</h3>
+    <form id="loginForm">
+      <div class="grid-container">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+
+      <div>
+        <button type="submit">Login</button>
+        
+        <p id="msg" class="message"></p>
+      </div>
+      <p style="text-align:center; font-size: 0.9em;">
+        Don't have an account? &nbsp;<a href="signup.html">Sign Up</a>
+      </p>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("loginForm");
+    const msg = document.getElementById("msg");
+
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      if (!email || !password) {
+        msg.textContent = "Please fill in both fields.";
+        msg.className = "message error";
+      } 
+      else {
+        msg.textContent = "Login successful";
+        msg.className = "message success";
+        // Redirect user to homepage.
+        alert("Login successful!");
+        window.location.href = "index.html";
+      }
+    });
+  </script>
+</body>
+</html>

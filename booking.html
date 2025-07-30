@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Bookings- TechFixNow</title>
+    <meta charset = "utf-8" name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <!-- Linking External CSS File -->
+    <link rel = "stylesheet" href = "css/style.css">
+    <!-- Adding Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg,#2dacb8 , #6e48d7)
+        /* background: linear-gradient(135deg, #853bd5, #1deaed); */
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Flex Container: navigationbar (header+nav)-->
+    <div class="navigationbar">
+        <header class="headerbar">
+            <a href="index.html"><h1>TechFixNow</h1></a>
+        </header>
+    
+        <nav class="navibar"> 
+            <a href="booking.html">BOOK NOW</a>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="team.html">About Us</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html" class="signup-button">Sign Up</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+      <div class="form-wrapper">
+        <div class="form-container">
+          <form id="booking-form">
+            <h1>Book a Service</h1>
+            <fieldset>
+              <legend>Booking Details</legend>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="service">Service Type *</label>
+                  <select id="service" name="service" required>
+                  <option value="">Select</option>
+                  <option value="Repair">Repair</option>
+                  <option value="Technical Assistance">
+                      Technical Assistance
+                  </option>
+                  </select>
+                </div>
+
+                <div class="form-group" id="technical-assistance-group"
+                  style="display: none">
+                  <label for="techService">Assistance Type *</label>
+                  <select id="techService" name="techService">
+                  <option value="">Select</option>
+                  <option value="Network">Network</option>
+                  <option value="Software">Software</option>
+                  <option value="Hardware">Hardware</option>
+                  </select>
+                </div>
+
+                <div class="form-group" id="device-group">
+                  <label for="device">Device Type *</label>
+                  <select id="device" name="device" required>
+                  <option value="">Select</option>
+                  <option value="Router">Router</option>
+                  <option value="Phone">Phone</option>
+                  <option value="Tablet">Tablet</option>
+                  <option value="Laptop">Laptop</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="date">Date *</label>
+                  <input type="date" id="date" name="date" required />
+                </div>
+                <div class="form-group">
+                  <label for="time">Time *</label>
+                  <input type="time" id="time" name="time" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label><br />
+                <textarea
+                  id="message"
+                  name="message"
+                  maxlength="1500"
+                  placeholder="Please describe your issue with 200 words or less..."
+                ></textarea>
+              </div>
+            </fieldset>
+            <button type="submit">Confirm Booking</button>
+          </form>
+        </div>
+      </div>
+      <!-- Link External JS file -->
+      <script src="JavaScript/bookingscript.js"></script>
+    </main>
+    <!-- End of Main Content -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-flex flex-center">
+        <span class="footer-flex-item"><h2>TechFixNow</h2></span>
+        <nav class="footer-flex-item"> 
+          <ul>
+            <li>MENU</li>
+            <br>
+            <li><a href="booking.html">BOOK NOW</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="team.html">ABOUT US</a></li>
+            <br>
+            <li style="color: #dcdcdc">&copy; TechFixNow 2025</li>
+          </ul>
+        </nav>
+        <div class="footer-flex-item">
+          <ul>
+            <li>OPENING HOURS</li>
+            <br>
+            <li>08:00-18:00 EVERY DAY</li>
+          </ul>
+        </div>
+        <div class="footer-flex-item">
+          <ul>
+            <li>CONNECT WITH OUR SOCIALS</li>
+            <br>
+            <li><a href="#">FACEBOOK</a></li>
+            <li><a href="#">INSTAGRAM</a></li>
+            <li><a href="#">TIKTOK</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Home- TechFixNow</title>
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0" charset = "utf-8" >
+        <!-- Linking External CSS File -->
+        <link rel = "stylesheet" href = "css/style.css">
+        <!-- Adding Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <style>
+        </style>
+    </head>
+
+    <body>
+        <!-- Flex Container: navigationbar (header+nav)-->
+        <!-- Put in flex container so that header (logo) and nav are aligned-->
+        <div class="navigationbar">
+            <header class="headerbar">
+                <a href="index.html"><h1>TechFixNow</h1></a>
+            </header>
+
+            <nav class="navibar"> 
+                <a href="booking.html">BOOK NOW</a>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="team.html">About Us</a>
+                <a href="login.html">Login</a>
+                <a href="signup.html" class="signup-button">Sign Up</a>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Flex Container: Hero Banner-->
+            <div class="herobanner flex-center">
+                <!-- Flex Item 1: Text + Call-to-Action -->
+                <div class="herotext">
+                    <h2>Whatever It Is, We Can Fix!<br>Book Our Services Now.</h2>
+                    <p>Computer Repairs, Wifi Setup, General Tech Help?<br> We've got it all covered.</p>
+                    <a href="services.html"><button type="button" class="button">Browse Our Services</button></a>
+                    <a href="booking.html"><button type="button" class="button">BOOK NOW</button></a>
+                </div>
+
+                <!-- Flex Item 2 : Hero Banner Images -->
+                <div class="heroimage flex-center">
+                    <img src = "images/computerrepair.jpg" alt="phone repair">
+                    <img src = "images/wifi3.jpg" alt="wifi">
+                    <img src="images/cracked-screen.jpg" alt="cracked phone screen">
+                    <img src="images/code.jpg" alt="code">
+                </div>
+            </div>
+            
+            <section class="intro">
+                <h2 class="heading">What is TechFixNow?</h2>
+                <p>
+                    TechFixNow is your one-stop platform for booking trusted tech services. <br>
+                    Whether you need laptop repair, Wi-Fi setup, or general tech support, we connect you to verified experts in minutes.
+                </p>
+            </section>
+
+
+            <!-- SERVICE CARDS -->
+            <section class="our-services">
+                <h2 class="heading" style="text-align: center;">Explore Our Services</h2>
+                <!-- Flex Container: Service Cards-->
+                <div class="service-cards flex-center">               
+                    <!-- Service Card 1 -->
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src = "images/phone-repair.jpg" alt="phone repair">
+                        </div>
+                        <div class="service-text">
+                            <h3>Device Repair</h3>
+                            <p>We repair devices with cracked screens, hardware or software issues and even water damage- fast and affordably.</p>
+                            <a href="booking.html"><button type="button" class="button">BOOK NOW</button></a>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src="images/tech_support.jpg" alt="code">
+                        </div>
+                        <div class="service-text">
+                            <h3>General IT Assistance</h3>
+                            <p>Dealing with tech-related issues? Our team will gladly answer any questions you have! Book your IT consultation now. </p>
+                            <a href="booking.html"><button type="button" class="button">BOOK NOW</button></a>
+                        </div> 
+                    </div>
+                    <!-- Service Card 3 -->
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src = "images/fixing_wifi.jpg" alt="wifi">
+                        </div>
+                        <div class="service-text">
+                            <h3>Wifi Setup/Repair</h3>
+                            <p>We help customers with setting up their WiFi routers, as well as resolve any WiFi-related issues.</p>
+                            <a href="booking.html"><button type="button" class="button">BOOK NOW</button></a>
+                        </div>
+                    </div>
+                    <!-- Service Card 4 -->
+                    <div class="service-card">
+                        <div class="service-img">
+                            <img src = "images/phone.jpg" alt="wifi">
+                        </div>
+                        <div class="service-text">
+                            <h3>Phone Setup</h3>
+                            <p>Need help setting up a new phone? We've got you covered.</p>
+                            <a href="booking.html"><button type="button" class="button">BOOK NOW</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <h2 class="heading" style="text-align: center;">Meet Our Team</h2>
+            <section class="team-container flex-center">
+                <div class="team-card">
+                <img src="images/member1.jpg" alt="Jaspreet Kaur" />
+                <h3>Jaspreet Kaur</h3>
+                <p>I built the homepage and made sure all the pages were properly connected. I also wrote and formatted the group report so my teammates could focus on their tasks.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/member2.jpg" alt="Nasra Hassan" />
+                <h3>Nasra Hassan</h3>
+                <p>I worked on the HTML and CSS for the booking page as well as the Javascript form validation.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/member3.jpg" alt="Kuek Wei Yang" />
+                <h3>Kuek Wei Yang</h3>
+                <p>This is my final year in year 1. My work on the team is to make the login.html and signup.html.</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/member4.jpg" alt="Wong Hui Yue" />
+                <h3>Wong Hui Yue</h3>
+                <p>I'm Hui Yue, and my contribution to this project involves providing CSS styling and responsiveness for our website.</p>
+
+            </div>
+
+            <div class="team-card">
+                <img src="images/member5.jpg" alt="Janice Er Xin Ni" />
+                <h3>Janice Er Xin Ni</h3>
+                <p>I'm Janice, responsible for the services and team pages. I ensured the layout and content were clear and consistent with the overall site design. </p>
+            </div>
+            </section>
+        </main>
+        <!-- End of Main Content -->
+        <!-- Footer -->
+        <footer> 
+            <div class="footer-flex flex-center">
+                <span class="footer-flex-item"><h2>TechFixNow</h2></span>
+                <nav class="footer-flex-item"> 
+                    <ul>
+                        <li>MENU</li>
+                        <br>
+                        <li><a href="booking.html">BOOK NOW</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="team.html">ABOUT US</a></li>
+                        <br>
+                        <li style="color: #dcdcdc">&copy; TechFixNow 2025</li>
+                    </ul>
+                </nav>
+                <div class="footer-flex-item">
+                    <ul>
+                        <li>OPENING HOURS</li>
+                        <br>
+                        <li>08:00-18:00 EVERY DAY</li>
+                    </ul>
+                </div>
+                <div class="footer-flex-item">
+                    <ul>
+                        <li>CONNECT WITH OUR SOCIALS</li>
+                        <br>
+                        <li><a href="#">FACEBOOK</a></li>
+                        <li><a href="#">INSTAGRAM</a></li>
+                        <li><a href="#">TIKTOK</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
